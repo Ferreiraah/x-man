@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap");
+
+:root {
+  --fonte-principal: "Oxanium", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  box-sizing: border-box;
+  font-family: "Oxanium", cursive;
+  color: white;
+}
+
+body::before {                                                      /* sempre bom usar isso quando tiver uma imagem de fundo  */
+  content: "";
+  background-image: url(/src/imagens/bg-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+ul {
+  list-style: none;
+}
+
+.cabecalho {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.selecao__de__personagens {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  gap: 30px;
+  min-height: calc(100vh - 152px);
+}
+
+.lista__de__personagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.personagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 585px;
+  gap: 25px;
+}
+
+.personagens h1 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  border-bottom: 3px solid #47f4ff;
+  border-radius: 40px;
+}
+
+.lista__de__personagens .personagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.personagem__selecionado {
+  text-align: center;
+  max-height: 530px;
+}
+
+.personagem__grande {
+  width: 430px;
+  height: 430px;
+}
+
+.lista__de__personagens .personagem.selecionado {
+  box-shadow: 0px 0px 24px 5px #0271f7;
+}
+
+.nome__personagem {
+  border-bottom: 3px solid #47f4ff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  border-radius: 40px;
+}
+
+.descricao__personagem {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 420px;
+}
