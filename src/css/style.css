@@ -47,14 +47,14 @@ ul {
   min-height: calc(100vh - 152px);
 }
 
-.lista__de__personagens {
+.selecao__de__personagens .lista__de__personagens {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
 }
 
-.personagens {
+.selecao__de__personagens .personagens {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +62,7 @@ ul {
   gap: 25px;
 }
 
-.personagens h1 {
+.selecao__de__personagens .personagens .titulo{
   letter-spacing: 4px;
   text-transform: uppercase;
   text-align: center;
@@ -91,7 +91,7 @@ ul {
   box-shadow: 0px 0px 24px 5px #0271f7;
 }
 
-.nome__personagem {
+.personagem__selecionado .nome__personagem {
   border-bottom: 3px solid #47f4ff;
   letter-spacing: 4px;
   text-transform: uppercase;
